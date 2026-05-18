@@ -17,7 +17,7 @@ public class BatatisItem extends Item
 
         if (!level.isClientSide()) {
             // your effects here, examples:
-            entity.addEffect(new MobEffectInstance(MobEffects.WATER_BREATHING,999999999,10,false,true,true));
+            entity.addEffect(new MobEffectInstance(MobEffects.WATER_BREATHING,3600,0,false,true,true));
         }
 
         return result;

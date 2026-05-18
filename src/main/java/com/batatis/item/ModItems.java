@@ -42,8 +42,10 @@ public class ModItems {
     }
     public static void registerModItems(){
         Batatis.LOGGER.info("Registering Item : " + ModItems.BATATIS);
-        CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.INGREDIENTS).register(output -> {
+        CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.FOOD_AND_DRINKS).register(output -> {
             output.accept(BATATIS);
+            output.accept(LOADEDBATATIS);
+            output.accept(GOLDENBOTATO);
         });
     }
 

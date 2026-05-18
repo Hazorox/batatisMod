@@ -18,7 +18,7 @@ public class LoadedBatatisItem extends Item
 
         if (!level.isClientSide()) {
             // your effects here, examples:
-            entity.addEffect(new MobEffectInstance(ModEffects.IMMUNE, 12000, 0));
+            entity.addEffect(new MobEffectInstance(ModEffects.IMMUNE, 3600, 0));
         }
 
         return result;
