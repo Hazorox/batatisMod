@@ -1,5 +1,6 @@
 package com.batatis;
 
+import com.batatis.datagen.ModLanguageProvider;
 import com.batatis.datagen.ModModelProvider;
 import com.batatis.datagen.ModRecipeProvider;
 import net.fabricmc.fabric.api.datagen.v1.DataGeneratorEntrypoint;
@@ -12,5 +13,6 @@ public class BatatisDataGenerator implements DataGeneratorEntrypoint {
 		var pack = fabricDataGenerator.createPack();
 		pack.addProvider(ModModelProvider::new);
 		pack.addProvider(ModRecipeProvider::new);
+		pack.addProvider(ModLanguageProvider::new);
 	}
 }

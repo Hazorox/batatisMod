@@ -1,4 +1,5 @@
 package com.batatis.item;
+import com.batatis.effects.ModEffects;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.LivingEntity;
@@ -6,9 +7,9 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
 
-public class BatatisItem extends Item
+public class LoadedBatatisItem extends Item
 {
-    public BatatisItem(Properties properties){
+    public LoadedBatatisItem(Properties properties){
         super(properties);
     }
     @Override
@@ -17,7 +18,7 @@ public class BatatisItem extends Item
 
         if (!level.isClientSide()) {
             // your effects here, examples:
-            entity.addEffect(new MobEffectInstance(MobEffects.WATER_BREATHING,999999999,10,false,true,true));
+            entity.addEffect(new MobEffectInstance(ModEffects.IMMUNE, 12000, 0));
         }
 
         return result;

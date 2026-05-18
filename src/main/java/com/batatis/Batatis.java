@@ -1,5 +1,6 @@
 package com.batatis;
 
+import com.batatis.effects.ModEffects;
 import com.batatis.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
@@ -23,5 +24,6 @@ public class Batatis implements ModInitializer {
 
 		LOGGER.info("Hello Fabric world!");
 		ModItems.registerModItems();
+		ModEffects.registerModEffects();
 	}
 }

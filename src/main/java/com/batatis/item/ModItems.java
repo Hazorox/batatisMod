@@ -15,21 +15,21 @@ import java.util.function.Function;
 
 public class ModItems {
     public static final Item BATATIS = registerItem("batatis", properties ->
-            new Item(properties.food(new FoodProperties.Builder()
+            new BatatisItem(properties.food(new FoodProperties.Builder()
                     .nutrition(2)
                     .saturationModifier(1f)
                     .alwaysEdible()
                     .build()))
     );
     public static final Item GOLDENBOTATO = registerItem("golden_botato", properties ->
-            new Item(properties.food(new FoodProperties.Builder()
+            new GoldenBatatisItem(properties.food(new FoodProperties.Builder()
                     .nutrition(10)
                     .saturationModifier(10f)
                     .alwaysEdible()
                     .build()))
     );
     public static final Item LOADEDBATATIS = registerItem("loaded_batatis", properties ->
-            new BatatisItem(properties.food(new FoodProperties.Builder()
+            new LoadedBatatisItem(properties.food(new FoodProperties.Builder()
                     .nutrition(20)
                     .saturationModifier(20f)
                     .alwaysEdible()
