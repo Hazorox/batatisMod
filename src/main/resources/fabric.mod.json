@@ -5,13 +5,13 @@
 	"name": "Batatis",
 	"description": "This is an example description! Tell everyone what your mod is about!",
 	"authors": [
-		"Me!"
+		"Hazoro"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"homepage": "github.com/hazorox",
+		"sources": "https://github.com/hazoro/batatisMod"
 	},
-	"license": "CC0-1.0",
+	"license": "MIT",
 	"icon": "assets/batatis/icon.png",
 	"environment": "*",
 	"entrypoints": {
