@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "batatis",
+  "key": {
+    "R": "batatis:batatis",
+    "x": "minecraft:gold_ingot"
+  },
+  "pattern": [
+    "xxx",
+    "xRx",
+    "xxx"
+  ],
+  "result": {
+    "id": "batatis:golden_botato"
+  }
+}

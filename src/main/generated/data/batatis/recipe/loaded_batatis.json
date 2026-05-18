@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "batatis",
+  "key": {
+    "R": "batatis:golden_botato",
+    "x": "minecraft:diamond"
+  },
+  "pattern": [
+    "xxx",
+    "xRx",
+    "xxx"
+  ],
+  "result": {
+    "id": "batatis:loaded_batatis"
+  }
+}

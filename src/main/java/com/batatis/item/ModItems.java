@@ -28,12 +28,20 @@ public class ModItems {
                     .alwaysEdible()
                     .build()))
     );
+    public static final Item LOADEDBATATIS = registerItem("loaded_batatis", properties ->
+            new BatatisItem(properties.food(new FoodProperties.Builder()
+                    .nutrition(20)
+                    .saturationModifier(20f)
+                    .alwaysEdible()
+
+                    .build()))
+    );
     private static Item registerItem(String name, Function<Item.Properties, Item> function){
         return Registry.register(BuiltInRegistries.ITEM, Identifier.fromNamespaceAndPath(Batatis.MOD_ID, name),
                 function.apply(new Item.Properties().setId(ResourceKey.create(Registries.ITEM,Identifier.fromNamespaceAndPath(Batatis.MOD_ID,name)))));
     }
     public static void registerModItems(){
-        Batatis.LOGGER.info("Registering Item : " + Batatis.MOD_ID);
+        Batatis.LOGGER.info("Registering Item : " + ModItems.BATATIS);
         CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.INGREDIENTS).register(output -> {
             output.accept(BATATIS);
         });

@@ -3,6 +3,7 @@ package com.batatis;
 import com.batatis.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
+import net.fabricmc.fabric.api.entity.event.v1.ServerLivingEntityEvents;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

@@ -1,6 +1,7 @@
 package com.batatis;
 
 import com.batatis.datagen.ModModelProvider;
+import com.batatis.datagen.ModRecipeProvider;
 import net.fabricmc.fabric.api.datagen.v1.DataGeneratorEntrypoint;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
 //import net.minecraft.client.data.models.ModelProvider;
@@ -10,5 +11,6 @@ public class BatatisDataGenerator implements DataGeneratorEntrypoint {
 	public void onInitializeDataGenerator(FabricDataGenerator fabricDataGenerator) {
 		var pack = fabricDataGenerator.createPack();
 		pack.addProvider(ModModelProvider::new);
+		pack.addProvider(ModRecipeProvider::new);
 	}
 }

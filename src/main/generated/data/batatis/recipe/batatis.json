@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "batatis",
+  "ingredients": [
+    "minecraft:gold_nugget",
+    "minecraft:potato"
+  ],
+  "result": {
+    "id": "batatis:batatis"
+  }
+}

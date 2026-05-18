@@ -18,6 +18,7 @@ public class ModModelProvider extends FabricModelProvider {
     public void generateItemModels(ItemModelGenerators itemModelGenerators){
         itemModelGenerators.generateFlatItem(ModItems.BATATIS, ModelTemplates.FLAT_ITEM);
         itemModelGenerators.generateFlatItem(ModItems.GOLDENBOTATO, ModelTemplates.FLAT_ITEM);
+        itemModelGenerators.generateFlatItem(ModItems.LOADEDBATATIS, ModelTemplates.FLAT_ITEM);
     }
 
 }

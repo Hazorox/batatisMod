@@ -3,7 +3,7 @@
 	"package": "com.batatis.mixin",
 	"compatibilityLevel": "JAVA_25",
 	"mixins": [
-		"ExampleMixin"
+//		"ExampleMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1
