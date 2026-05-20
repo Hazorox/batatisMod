@@ -21,7 +21,7 @@ public class ModItems {
                     .alwaysEdible()
                     .build()))
     );
-    public static final Item GOLDENBOTATO = registerItem("golden_botato", properties ->
+    public static final Item GOLDENBATATIS = registerItem("golden_batatis", properties ->
             new GoldenBatatisItem(properties.food(new FoodProperties.Builder()
                     .nutrition(10)
                     .saturationModifier(10f)
@@ -45,7 +45,7 @@ public class ModItems {
         CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.FOOD_AND_DRINKS).register(output -> {
             output.accept(BATATIS);
             output.accept(LOADEDBATATIS);
-            output.accept(GOLDENBOTATO);
+            output.accept(GOLDENBATATIS);
         });
     }
 

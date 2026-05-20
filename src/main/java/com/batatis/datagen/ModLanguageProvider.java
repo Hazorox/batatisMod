@@ -15,7 +15,7 @@ public class ModLanguageProvider extends FabricLanguageProvider {
     @Override
     public void generateTranslations(HolderLookup.Provider registries, TranslationBuilder builder) {
         builder.add(ModItems.BATATIS, "Batatis");
-        builder.add(ModItems.GOLDENBOTATO, "Golden Botato");
+        builder.add(ModItems.GOLDENBATATIS, "Golden Batatis");
         builder.add(ModItems.LOADEDBATATIS, "Loaded Batatis");
         builder.add(ModEffects.IMMUNE.value(), "Immune");
     }

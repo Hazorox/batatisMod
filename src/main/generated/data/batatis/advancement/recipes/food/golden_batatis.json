@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "batatis:golden_botato"
+        "recipe": "batatis:golden_batatis"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -26,7 +26,7 @@
   ],
   "rewards": {
     "recipes": [
-      "batatis:golden_botato"
+      "batatis:golden_batatis"
     ]
   }
 }

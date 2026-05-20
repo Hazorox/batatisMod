@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "batatis:item/golden_botato"
+    "layer0": "batatis:item/golden_batatis"
   }
 }

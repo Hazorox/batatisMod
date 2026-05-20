@@ -23,8 +23,8 @@ public class ModRecipeProvider extends FabricRecipeProvider{
         return new RecipeProvider(registries,output) {
             @Override
             public void buildRecipes() {
-                List<ItemLike> GOLDENBOTATO = List.of(ModItems.GOLDENBOTATO);
-                shaped(RecipeCategory.FOOD,ModItems.GOLDENBOTATO)
+                List<ItemLike> GOLDENBOTATO = List.of(ModItems.GOLDENBATATIS);
+                shaped(RecipeCategory.FOOD,ModItems.GOLDENBATATIS)
                         .pattern("xxx")
                         .pattern("xRx")
                         .pattern("xxx")
@@ -33,21 +33,22 @@ public class ModRecipeProvider extends FabricRecipeProvider{
                         .unlockedBy(getHasName(ModItems.BATATIS), has(Items.GOLD_INGOT))
                         .group("batatis")
                         .save(output);
-                List<ItemLike> LOADEDBOTATO = List.of(ModItems.GOLDENBOTATO);
+                List<ItemLike> LOADEDBOTATO = List.of(ModItems.GOLDENBATATIS);
                 shaped(RecipeCategory.FOOD,ModItems.LOADEDBATATIS)
                         .pattern("xxx")
                         .pattern("xRx")
                         .pattern("xxx")
-                        .define('R',ModItems.GOLDENBOTATO)
+                        .define('R',ModItems.GOLDENBATATIS)
                         .define('x',Items.DIAMOND)
                         .group("batatis")
-                        .unlockedBy("has_golden_botato", has(ModItems.GOLDENBOTATO))
+                        .unlockedBy("has_golden_batatis", has(ModItems.GOLDENBATATIS))
+                        .unlockedBy(getHasName(Items.DIAMOND), has(Items.DIAMOND))
                         .save(output);
                 List<ItemLike> BATATIS = List.of(ModItems.BATATIS);
                 shapeless(RecipeCategory.FOOD,ModItems.BATATIS)
                         .requires(Items.GOLD_NUGGET)
                         .requires(Items.POTATO)
-                        .unlockedBy("has_golden_botato", has(Items.GOLD_NUGGET))
+                        .unlockedBy("has_golden_batatis", has(Items.GOLD_NUGGET))
                         .group("batatis")
                         .save(output);
 
