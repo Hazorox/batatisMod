@@ -32,3 +32,13 @@ _Litrerally no hostile mob can approach you_
 ![loaded batatis](https://cdn.modrinth.com/data/cached_images/05c7217318276864368b3367ce617345b23d37e7_0.webp)
 
 ^^ Just admire the beauty
+
+
+
+A project for horizons event on Hackclub
+
+AI Usage in this project : (claude)
+
+- Help with the language provider
+- Help with making custom recipes for the batatis
+- Help with making the custom batatis immunity effect
